@@ -1,0 +1,29 @@
+.box {
+  margin-top: 30px;
+  background-color: #ffd700;
+  padding: 0px 0 10px 15px;
+  text-align: left;
+}
+
+.usrItem {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  padding-top: 10px;
+  color: #644280;
+}
+
+.usrItem img {
+  height: 35px;
+  width: 35px;
+}
+
+span {
+  display: block;
+  font-size: 0.8rem;
+}
