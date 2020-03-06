@@ -3,7 +3,7 @@ import classes from './Nav.module.css';
 import { NavLink } from 'react-router-dom';
 import AddBlock from './AddBlock/AddBlock';
 
-const Nav = () => {
+const Nav = props => {
   return (
     <nav className={classes.nav}>
       <div className={classes.item}>
@@ -32,7 +32,7 @@ const Nav = () => {
         </NavLink>
       </div>
       <div>
-        <AddBlock head='Friends' />
+        <AddBlock head='Friends' usrs={props.state} />
       </div>
     </nav>
   );

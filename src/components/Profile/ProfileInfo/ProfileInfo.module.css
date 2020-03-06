@@ -1,6 +1,6 @@
 .profimg {
   width: 100%;
-  height: 150px;
+  height: 140px;
 }
 
 .usrInfo {
@@ -11,6 +11,7 @@
 
 .usrAvatarImage {
   width: 75px;
+  height: 75px;
   border-right: 5px solid rgb(100, 66, 128, 0.8);
 }
 
