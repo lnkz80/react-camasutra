@@ -1,16 +1,18 @@
 import React from 'react';
 import classes from './ProfileInfo.module.css';
 
-const ProfileInfo = () => {
+const ProfileInfo = props => {
+  let me = props.userData[0];
+   
   return (
     <div>
       <div>
         <img src='./img/profile_wallpaper.jpg' className={classes.profimg} />
       </div>
       <div className={classes.usrInfo}>
-        <img src='./img/usr_avatar.jpg' className={classes.usrAvatarImage} />
+        <img src={me.avatar} className={classes.usrAvatarImage} />
         <span className={classes.usrName}>
-          Homer Simpson
+  {me.fullname}
           <div className={classes.usrDescription}>The best man in the world!!!</div>
         </span>
       </div>
