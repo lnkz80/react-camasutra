@@ -20,14 +20,14 @@ let state = {
   },
   dialogsPage: {
     dialogsData: [
+      { id: 0, name: 'Alex', act: true },
       { id: 1, name: 'Steve', act: false },
       { id: 2, name: 'John', act: false },
       { id: 3, name: 'Bruce', act: false },
-      { id: 4, name: 'Alex', act: true },
-      { id: 5, name: 'Stella', act: false },
-      { id: 6, name: 'Samanta', act: false },
-      { id: 7, name: 'Sarah', act: false },
-      { id: 8, name: 'Rick', act: false }
+      { id: 4, name: 'Stella', act: false },
+      { id: 5, name: 'Samanta', act: false },
+      { id: 6, name: 'Sarah', act: false },
+      { id: 7, name: 'Rick', act: false }
     ],
     // usr:false - me; usr:true - another user
     // , avatar: "./img/usr_avatar.jpg"
