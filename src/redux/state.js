@@ -1,14 +1,14 @@
-const pathToAvatars = "./img/usersAvatars/";
+const pathToAvatars = './img/usersAvatars/';
 let state = {
   usrs: [
     { id: 0, name: 'Alex', fullname: 'Alessandro Linkuzzo', avatar: pathToAvatars + 'alex.png' },
-    { id: 1, name: 'Steve', fullname: 'Steve Jobs', avatar: pathToAvatars + 'steve.png'  },
-    { id: 2, name: 'John', fullname: 'John Travolta', avatar: pathToAvatars + 'john.png'  },
-    { id: 3, name: 'Bruce', fullname: 'Bruce Lee', avatar: pathToAvatars + 'bruce.png'  },
-    { id: 4, name: 'Stella', fullname: 'Stella Artois', avatar: pathToAvatars + 'stella.png'  },
-    { id: 5, name: 'Samantha', fullname: 'Samantha Fox', avatar: pathToAvatars + 'samantha.png'  },
-    { id: 6, name: 'Sarah', fullname: 'Sarah Connor', avatar: pathToAvatars + 'sarah.png'  },
-    { id: 7, name: 'Rick', fullname: 'Rick Grimes', avatar: pathToAvatars + 'rick.png'  }
+    { id: 1, name: 'Steve', fullname: 'Steve Jobs', avatar: pathToAvatars + 'steve.png' },
+    { id: 2, name: 'John', fullname: 'John Travolta', avatar: pathToAvatars + 'john.png' },
+    { id: 3, name: 'Bruce', fullname: 'Bruce Lee', avatar: pathToAvatars + 'bruce.png' },
+    { id: 4, name: 'Stella', fullname: 'Stella Artois', avatar: pathToAvatars + 'stella.png' },
+    { id: 5, name: 'Samantha', fullname: 'Samantha Fox', avatar: pathToAvatars + 'samantha.png' },
+    { id: 6, name: 'Sarah', fullname: 'Sarah Connor', avatar: pathToAvatars + 'sarah.png' },
+    { id: 7, name: 'Rick', fullname: 'Rick Grimes', avatar: pathToAvatars + 'rick.png' }
   ],
   profilePage: {
     postsData: [
@@ -40,17 +40,17 @@ let state = {
         mess: 'Hi',
         avatar: pathToAvatars + 'sarah.png'
       },
-      { id: 4, usr: false, mess: 'What?', avatar: pathToAvatars + 'alex.png' },
+      { id: 4, usr: false, mess: 'What are you doing?', avatar: pathToAvatars + 'alex.png' },
       {
         id: 7,
         usr: false,
-        mess: 'What are you doing?',
+        mess: 'Hey!',
         avatar: pathToAvatars + 'alex.png'
       },
       {
         id: 3,
         usr: true,
-        mess: 'Who are you?',
+        mess: 'Nothing? Why are you asking?',
         avatar: pathToAvatars + 'sarah.png'
       },
       {
