@@ -40,10 +40,6 @@
   background-color: rgba(255, 215, 0, 0.05);
 }
 
-.mcontainer {
-  /* width: 100%; */
-}
-
 .message {
   padding: 15px;
   margin-left: 10px;
@@ -60,9 +56,14 @@
   vertical-align: top;
   margin-right: 15px;
 }
-
+.mcontainer {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+}
 .messageLeft {
   color: #aaa;
+  align-self: flex-start;
   /* border: 2px solid #644280;
   float: left;
   width: 50%; */
@@ -71,6 +72,7 @@
 .messageRight {
   /* background-color: #644280; */
   color: #644280;
+  align-self: flex-end;
   /* padding-left: 20px; */
   /* float: right;
   width: 50%;

@@ -36,6 +36,7 @@ let state = {
       {
         id: 4,
         header: 'Go to the football',
+        postimg: './img/postimg/gerrard.jpg',
         message:
           'When you walk through a storm/Hold your head up high/And dont be afraid of the dark/At the end of a storm/Theres a golden sky/And the sweet silver song of a lark”. These lyrics, from the song You’ll Never Walk Alone, were composed in 1945 and acted as a comfort to families suffering during the Second World War. The song ends “walk on with hope in your heart and youll never walk alone',
         date: '22-02-2020'
