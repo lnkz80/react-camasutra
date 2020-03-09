@@ -6,6 +6,7 @@ const Post = props => {
     <div className={classes.item}>
       <h3>{props.header}</h3>
       <small>Date: {props.date}</small>
+      {props.postimg ? <img src={props.postimg} /> : null}
       <p>{props.message}</p>
     </div>
   );

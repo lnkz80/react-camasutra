@@ -12,7 +12,13 @@ let state = {
   ],
   profilePage: {
     postsData: [
-      { id: 1, header: 'The first post on this page', message: 'Hi, how are you?', date: '12-12-2019' },
+      {
+        id: 1,
+        header: 'The first post on this page',
+        message: 'Hi, how are you?',
+        postimg: './img/postimg/hello.jpg',
+        date: '12-12-2019'
+      },
       {
         id: 2,
         header: 'Theweather is fine',

@@ -4,7 +4,9 @@ import Post from './Post/Post';
 import AddNewPost from './Post/AddNewPost';
 
 const MyPosts = props => {
-  let postsElements = props.postsData.map(p => <Post id={p.id} header={p.header} message={p.message} date={p.date} />);
+  let postsElements = props.postsData.map(p => (
+    <Post id={p.id} header={p.header} postimg={p.postimg} message={p.message} date={p.date} />
+  ));
 
   return (
     <div className={classes.posts}>
