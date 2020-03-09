@@ -1,11 +1,11 @@
-import React from "react";
-import classes from "./Post.module.css";
+import React from 'react';
+import classes from './Post.module.css';
 
 const Post = props => {
   return (
     <div className={classes.item}>
-      <h3>Post {props.id}</h3>
-      <small>User: {props.user}</small>
+      <h3>{props.header}</h3>
+      <small>Date: {props.date}</small>
       <p>{props.message}</p>
     </div>
   );

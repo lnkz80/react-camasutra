@@ -12,10 +12,28 @@ let state = {
   ],
   profilePage: {
     postsData: [
-      { id: 1, message: 'Hi, how are you?', user: 'Steve' },
-      { id: 2, message: "Hello, I'm fine", user: 'Alex' },
-      { id: 3, message: 'What are you doing?', user: 'Sarah' },
-      { id: 4, message: 'So what???', user: 'Alex' }
+      { id: 1, header: 'The first post on this page', message: 'Hi, how are you?', date: '12-12-2019' },
+      {
+        id: 2,
+        header: 'Theweather is fine',
+        message:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        date: '14-12-2019'
+      },
+      {
+        id: 3,
+        header: 'Happy New 2019 Year!!!',
+        message:
+          'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo!!!',
+        date: '31-12-2019'
+      },
+      {
+        id: 4,
+        header: 'Go to the football',
+        message:
+          'When you walk through a storm/Hold your head up high/And dont be afraid of the dark/At the end of a storm/Theres a golden sky/And the sweet silver song of a lark”. These lyrics, from the song You’ll Never Walk Alone, were composed in 1945 and acted as a comfort to families suffering during the Second World War. The song ends “walk on with hope in your heart and youll never walk alone',
+        date: '22-02-2020'
+      }
     ]
   },
   dialogsPage: {

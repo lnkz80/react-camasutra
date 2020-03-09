@@ -6,7 +6,9 @@ const AddNewPost = () => {
     <div className={classes.newpostform}>
       <form>
         <textarea placeholder='Добавить новый пост'></textarea>
-        <button type='submit'>Добавить</button>
+        <button type='submit'>
+          <img src='./img/sendmessage.png'></img>
+        </button>
       </form>
     </div>
   );
