@@ -1,5 +1,5 @@
-import React from 'react';
-import classes from './AddBlock.module.css';
+import React from "react";
+import classes from "./AddBlock.module.css";
 
 const BlockItem = props => {
   let l = props.name.length;
@@ -7,7 +7,7 @@ const BlockItem = props => {
   if (l <= 6) {
     name = props.name;
   } else {
-    name = props.name.substr(0, 3) + '-' + props.name.substr(l - 1);
+    name = props.name.substr(0, 2) + "-" + props.name.substr(l - 3);
   }
   return (
     <div className={classes.usrItem}>
@@ -21,7 +21,7 @@ const AddBlock = props => {
   let i = 0;
   let usrsInfo = props.usrs.map(function(u) {
     let out;
-    if (u.id != 0 && i < 7) {
+    if (u.id != 0 && i < 9) {
       out = <BlockItem id={u.id} name={u.name} avatar={u.avatar} />;
       i++;
     }

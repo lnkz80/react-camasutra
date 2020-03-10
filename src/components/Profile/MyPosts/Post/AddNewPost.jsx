@@ -1,13 +1,17 @@
-import React from 'react';
-import classes from './Post.module.css';
+import React from "react";
+import classes from "./Post.module.css";
 
 const AddNewPost = () => {
   return (
     <div className={classes.newpostform}>
       <form>
-        <textarea placeholder='Добавить новый пост'></textarea>
-        <button type='submit'>
-          <img src='./img/sendmessage.png'></img>
+        <textarea placeholder="Добавить новый пост"></textarea>
+        <button
+          onClick={() => {
+            alert("Hello!");
+          }}
+          type="submit">
+          <img src="./img/sendmessage.png"></img>
         </button>
       </form>
     </div>

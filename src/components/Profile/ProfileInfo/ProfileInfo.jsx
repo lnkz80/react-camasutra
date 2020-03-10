@@ -1,5 +1,5 @@
-import React from 'react';
-import classes from './ProfileInfo.module.css';
+import React from "react";
+import classes from "./ProfileInfo.module.css";
 
 const ProfileInfo = props => {
   let me = props.userData[0];
