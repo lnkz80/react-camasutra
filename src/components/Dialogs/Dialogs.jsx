@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./Dialogs.module.css";
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
+import AddNewMessage from "./Message/AddNewMessage";
 // import { NavLink } from "react-router-dom";
 
 const Dialogs = props => {
@@ -16,7 +17,10 @@ const Dialogs = props => {
   return (
     <div className={classes.dialogs}>
       <div className={classes.dialogsItems}>{dialogsElements}</div>
-      <div className={classes.messbox}>{messagesElements}</div>
+      <div className={classes.messbox}>
+        {messagesElements}
+        <AddNewMessage plchldr="Написать сообщение в чате" />
+      </div>
     </div>
   );
 };

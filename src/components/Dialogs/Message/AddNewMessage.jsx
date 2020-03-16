@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./Post.module.css";
+import classes from "../Dialogs.module.css";
 
-const AddNewPost = props => {
+const AddNewMessage = props => {
   return (
     <div className={classes.newpostform}>
       <form>
@@ -18,4 +18,4 @@ const AddNewPost = props => {
   );
 };
 
-export default AddNewPost;
+export default AddNewMessage;
