@@ -139,4 +139,15 @@ let state = {
   }
 };
 
+export let addPost = postMessage => {
+  let newPost = {
+    id: 5,
+    header: "Test",
+    postimg: "",
+    message: postMessage,
+    date: "19-03-2020"
+  };
+  state.profilePage.postsData.push(newPost);
+};
+
 export default state;

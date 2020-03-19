@@ -18,7 +18,7 @@ const MyPosts = props => {
     <div className={classes.posts}>
       <h2>MyPosts</h2>
       <hr></hr>
-      <AddNewPost plchldr="Добавить новый пост" />
+      <AddNewPost plchldr="Добавить новый пост" addPost={props.addPost} />
       {postsElements}
     </div>
   );
