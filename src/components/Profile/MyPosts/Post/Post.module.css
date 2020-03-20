@@ -56,18 +56,18 @@
   font-size: 1.2rem;
 }
 
-.newpostform button[type="submit"] {
+.newpostform button {
   /* display: flex; */
   width: 16%;
   border: 1px solid #eee;
   background-color: #fafafa;
 }
 
-.newpostform button[type="submit"] img {
+.newpostform button img {
   height: 32px;
   width: 32px;
 }
-.newpostform button[type="submit"]:hover {
+.newpostform button:hover {
   /* background-color: #f5f5f5; */
   background-color: gold;
   cursor: pointer;

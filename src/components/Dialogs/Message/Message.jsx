@@ -8,9 +8,9 @@ const Message = props => {
         className={`${classes.message} ${
           props.usr ? classes.messageRight : classes.messageLeft
         }`}>
-        {!props.usr && <img src={props.avatar} />}
+        {!props.usr && <img src={props.avatar} alt="alt" />}
         {props.message}
-        {props.usr && <img src={props.avatar} />}
+        {props.usr && <img src={props.avatar} alt="alt" />}
       </div>
     </div>
   );

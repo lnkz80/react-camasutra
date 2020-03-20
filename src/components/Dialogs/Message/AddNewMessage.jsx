@@ -11,7 +11,7 @@ const AddNewMessage = props => {
             alert("Hello!");
           }}
           type="submit">
-          <img src="./img/sendmessage.png"></img>
+          <img src="./img/sendmessage.png" alt="alt"></img>
         </button>
       </form>
     </div>

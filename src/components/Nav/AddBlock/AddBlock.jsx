@@ -11,7 +11,7 @@ const BlockItem = props => {
   }
   return (
     <div className={classes.usrItem}>
-      <img src={props.avatar} />
+      <img src={props.avatar} alt="alt" />
       <span>{name}</span>
     </div>
   );
@@ -21,7 +21,7 @@ const AddBlock = props => {
   let i = 0;
   let usrsInfo = props.usrs.map(function(u) {
     let out;
-    if (u.id != 0 && i < 9) {
+    if (u.id !== 0 && i < 9) {
       out = <BlockItem id={u.id} name={u.name} avatar={u.avatar} />;
       i++;
     }

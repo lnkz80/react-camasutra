@@ -11,7 +11,7 @@ const ProfileInfo = props => {
       </div> */}
       <div className={classes.usrInfo}>
         <div className={classes.usrAvaName}>
-          <img src={me.avatar} className={classes.usrAvatarImage} />
+          <img src={me.avatar} className={classes.usrAvatarImage} alt="alt" />
           <span className={classes.usrName}>
             {me.fullname}
             {/* <div className={classes.usrDescription}>The best man in the world!!!</div> */}
