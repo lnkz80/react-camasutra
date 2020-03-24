@@ -138,9 +138,12 @@ let state = {
         mess: 'NorthWest',
         avatar: pathToAvatars + 'sarah.png'
       }
-    ]
+    ],
+    newMessageText: ''
   }
 };
+
+window.state = state;
 
 export let addPost = () => {
   let newPost = {
@@ -155,8 +158,20 @@ export let addPost = () => {
   rerenderEntireTree(state);
 };
 
+export let addMessage = () => {
+  let newMessage = { id: 7, usr: false, mess: state.dialogsPage.newMessageText, avatar: pathToAvatars + 'alex.png' };
+  state.dialogsPage.messagesData.push(newMessage);
+  state.dialogsPage.newMessageText = '';
+  rerenderEntireTree(state);
+};
+
 export let updatePostText = newText => {
   state.profilePage.newPostText = newText;
+  rerenderEntireTree(state);
+};
+
+export let updateMessageText = newMessage => {
+  state.dialogsPage.newMessageText = newMessage;
   rerenderEntireTree(state);
 };
 

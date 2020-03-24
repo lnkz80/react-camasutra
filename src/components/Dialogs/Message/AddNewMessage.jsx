@@ -1,17 +1,28 @@
-import React from "react";
-import classes from "../Dialogs.module.css";
+import React from 'react';
+import classes from '../Dialogs.module.css';
 
 const AddNewMessage = props => {
+  let newMessageElement = React.createRef();
+
+  let addMessage = () => {
+    props.addMessage();
+  };
+
+  let onMessageChange = () => {
+    let text = newMessageElement.current.value;
+    props.updateMessageText(text);
+  };
   return (
     <div className={classes.newpostform}>
       <form>
-        <textarea placeholder={props.plchldr}></textarea>
-        <button
-          onClick={() => {
-            alert("Hello!");
-          }}
-          type="submit">
-          <img src="./img/sendmessage.png" alt="alt"></img>
+        <textarea
+          ref={newMessageElement}
+          value={props.newMessageText}
+          onChange={onMessageChange}
+          placeholder={props.plchldr}
+        />
+        <button type='button' onClick={addMessage}>
+          <img src='./img/sendmessage.png' alt='alt'></img>
         </button>
       </form>
     </div>

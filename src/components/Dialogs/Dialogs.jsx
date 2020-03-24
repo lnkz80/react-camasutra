@@ -15,7 +15,12 @@ const Dialogs = props => {
       <div className={classes.dialogsItems}>{dialogsElements}</div>
       <div className={classes.messbox}>
         {messagesElements}
-        <AddNewMessage plchldr='Написать сообщение в чате' />
+        <AddNewMessage
+          plchldr='Написать сообщение в чате'
+          addMessage={props.addMessage}
+          updateMessageText={props.updateMessageText}
+          newMessageText={props.state.newMessageText}
+        />
       </div>
     </div>
   );

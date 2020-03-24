@@ -108,19 +108,17 @@
   background-color: #fafafa;
 }
 
-.newpostform button[type="submit"] {
-  /* display: flex; */
+.newpostform button[type='button'] {
   width: 10%;
   border: 1px solid #eee;
-  /* background-color: gold; */
   background-color: #ссс;
 }
 
-.newpostform button[type="submit"] img {
+.newpostform button[type='button'] img {
   height: 24px;
   width: 24px;
 }
-.newpostform button[type="submit"]:hover {
+.newpostform button[type='button']:hover {
   /* background-color: #f5f5f5; */
   background-color: gold;
   cursor: pointer;
