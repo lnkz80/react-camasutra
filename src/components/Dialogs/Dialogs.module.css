@@ -101,17 +101,19 @@
   padding: 10px;
   /* height: 100px; */
   border: 1px solid #eee;
+  border-right: 0;
   color: #777;
   outline: none;
   resize: none;
-  font-size: 1.2rem;
-  background-color: #fafafa;
+  font-size: 1rem;
+  background-color: #ffffff;
 }
 
 .newpostform button[type='button'] {
   width: 10%;
   border: 1px solid #eee;
-  background-color: #ссс;
+  border-left: 0;
+  background-color: #f0f0f0;
 }
 
 .newpostform button[type='button'] img {
