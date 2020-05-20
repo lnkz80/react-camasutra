@@ -200,28 +200,21 @@ const UPDATE_POST_TEXT = "UPDATE-POST-TEXT";
 const ADD_MESSAGE = "ADD-MESSAGE";
 const UPDATE_MESSAGE_TEXT = "UPDATE-MESSAGE-TEXT";
 
-export const addPostActionCreator = () => {
-  return {
-    type: ADD_POST,
-  };
-};
+export const addPostActionCreator = () => ({ type: ADD_POST });
 
-export const updateNewPostTextActionCreator = (text) => {
-  return {
-    type: UPDATE_POST_TEXT,
-    newText: text,
-  };
-};
+export const updateNewPostTextActionCreator = (text) => ({
+  type: UPDATE_POST_TEXT,
+  newText: text,
+});
 
-export const addMessageCreator = () => {
-  return {
-    type: ADD_MESSAGE,
-  };
-};
+export const addMessageCreator = () => ({
+  type: ADD_MESSAGE,
+});
 
-export const updateMessageTextCreator = (text) => {
-  return { type: UPDATE_MESSAGE_TEXT, newMessage: text };
-};
+export const updateMessageTextCreator = (text) => ({
+  type: UPDATE_MESSAGE_TEXT,
+  newMessage: text,
+});
 
 export default store;
 window.store = store;
