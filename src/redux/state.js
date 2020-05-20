@@ -193,38 +193,34 @@ let store = {
       this._callSubscriber(this._state);
     }
   },
-  // ===============OLD_FUNC_WITHOUT_DISPATCH====================
-  // addPost() {
-  //   let newPost = {
-  //     id: 5,
-  //     header: "Test",
-  //     message: this._state.profilePage.newPostText,
-  //     postimg: "./img/postimg/test.jpg",
-  //     date: "19-03-2020",
-  //   };
-  //   this._state.profilePage.postsData.push(newPost);
-  //   this._state.profilePage.newPostText = "";
-  //   this._callSubscriber(this._state);
-  // },
-  // updatePostText(newText) {
-  //   this._state.profilePage.newPostText = newText;
-  //   this._callSubscriber(this._state);
-  // },
-  // addMessage() {
-  //   let newMessage = {
-  //     id: 7,
-  //     usr: false,
-  //     mess: this._state.dialogsPage.newMessageText,
-  //     avatar: pathToAvatar + "alex.png",
-  //   };
-  //   this._state.dialogsPage.messagesData.push(newMessage);
-  //   this._state.dialogsPage.newMessageText = "";
-  //   this._callSubscriber(this._state);
-  // },
-  // updateMessageText(newMessage) {
-  //   this._state.dialogsPage.newMessageText = newMessage;
-  //   this._callSubscriber(this._state);
-  // },
+};
+
+const ADD_POST = "ADD-POST";
+const UPDATE_POST_TEXT = "UPDATE-POST-TEXT";
+const ADD_MESSAGE = "ADD-MESSAGE";
+const UPDATE_MESSAGE_TEXT = "UPDATE-MESSAGE-TEXT";
+
+export const addPostActionCreator = () => {
+  return {
+    type: ADD_POST,
+  };
+};
+
+export const updateNewPostTextActionCreator = (text) => {
+  return {
+    type: UPDATE_POST_TEXT,
+    newText: text,
+  };
+};
+
+export const addMessageCreator = () => {
+  return {
+    type: ADD_MESSAGE,
+  };
+};
+
+export const updateMessageTextCreator = (text) => {
+  return { type: UPDATE_MESSAGE_TEXT, newMessage: text };
 };
 
 export default store;

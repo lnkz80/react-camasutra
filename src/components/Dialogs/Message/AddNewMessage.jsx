@@ -2,17 +2,21 @@ import React from "react";
 import classes from "../Dialogs.module.css";
 import { faComments } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  updateMessageTextCreator,
+  addMessageCreator,
+} from "../../../redux/state";
 
 const AddNewMessage = (props) => {
   let newMessageElement = React.createRef();
 
   let addMessage = () => {
-    props.dispatch({ type: "ADD-MESSAGE" });
+    props.dispatch(addMessageCreator());
   };
 
   let onMessageChange = () => {
     let text = newMessageElement.current.value;
-    props.dispatch({ type: "UPDATE-MESSAGE-TEXT", newMessage: text });
+    props.dispatch(updateMessageTextCreator(text));
   };
   return (
     <div className={classes.newpostform}>
