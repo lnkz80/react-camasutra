@@ -1,11 +1,17 @@
-import React from 'react';
-import classes from './MyPosts.module.css';
-import Post from './Post/Post';
-import AddNewPost from './Post/AddNewPost';
+import React from "react";
+import classes from "./MyPosts.module.css";
+import Post from "./Post/Post";
+import AddNewPost from "./Post/AddNewPost";
 
-const MyPosts = props => {
-  let postsElements = props.postsData.map(p => (
-    <Post id={p.id} header={p.header} postimg={p.postimg} message={p.message} date={p.date} />
+const MyPosts = (props) => {
+  let postsElements = props.postsData.map((p) => (
+    <Post
+      id={p.id}
+      header={p.header}
+      postimg={p.postimg}
+      message={p.message}
+      date={p.date}
+    />
   ));
   // debugger;
   return (
@@ -13,10 +19,9 @@ const MyPosts = props => {
       <h2>MyPosts</h2>
       <hr></hr>
       <AddNewPost
-        plchldr='Добавить новый пост'
-        addPost={props.addPost}
+        plchldr="Добавить новый пост"
         newPostText={props.newPostText}
-        updatePostText={props.updatePostText}
+        dispatch={props.dispatch}
       />
       {postsElements}
     </div>

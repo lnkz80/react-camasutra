@@ -1,18 +1,18 @@
-import React from 'react';
-import classes from '../Dialogs.module.css';
-import { faComments } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import classes from "../Dialogs.module.css";
+import { faComments } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const AddNewMessage = props => {
+const AddNewMessage = (props) => {
   let newMessageElement = React.createRef();
 
   let addMessage = () => {
-    props.addMessage();
+    props.dispatch({ type: "ADD-MESSAGE" });
   };
 
   let onMessageChange = () => {
     let text = newMessageElement.current.value;
-    props.updateMessageText(text);
+    props.dispatch({ type: "UPDATE-MESSAGE-TEXT", newMessage: text });
   };
   return (
     <div className={classes.newpostform}>
@@ -23,8 +23,8 @@ const AddNewMessage = props => {
           onChange={onMessageChange}
           placeholder={props.plchldr}
         />
-        <button type='button' onClick={addMessage}>
-          <FontAwesomeIcon icon={faComments} size='2x' color='#ffffff' />
+        <button type="button" onClick={addMessage}>
+          <FontAwesomeIcon icon={faComments} size="2x" color="#ffffff" />
           {/* <img src='./img/sendmessage.png' alt='alt'></img> */}
         </button>
       </form>
