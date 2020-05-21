@@ -1,4 +1,10 @@
 const pathToAvatar = "./img/usersAvatars/";
+// CONSTANTS FOR ACTION CREATORS
+const ADD_POST = "ADD-POST";
+const UPDATE_POST_TEXT = "UPDATE-POST-TEXT";
+const ADD_MESSAGE = "ADD-MESSAGE";
+const UPDATE_MESSAGE_TEXT = "UPDATE-MESSAGE-TEXT";
+//==============================
 
 let store = {
   _state: {
@@ -158,7 +164,7 @@ let store = {
   },
   dispatch(action) {
     // ADD-POST
-    if (action.type === "ADD-POST") {
+    if (action.type === ADD_POST) {
       let newPost = {
         id: 5,
         header: "Test",
@@ -171,12 +177,12 @@ let store = {
       this._callSubscriber(this._state);
     }
     // UPDATE-POST-TEXT
-    else if (action.type === "UPDATE-POST-TEXT") {
+    else if (action.type === UPDATE_POST_TEXT) {
       this._state.profilePage.newPostText = action.newText;
       this._callSubscriber(this._state);
     }
     // ADD-MESSAGE
-    else if (action.type === "ADD-MESSAGE") {
+    else if (action.type === ADD_MESSAGE) {
       let newMessage = {
         id: 7,
         usr: false,
@@ -188,17 +194,14 @@ let store = {
       this._callSubscriber(this._state);
     }
     //UPDATE-MESSAGE-TEXT
-    else if (action.type === "UPDATE-MESSAGE-TEXT") {
+    else if (action.type === UPDATE_MESSAGE_TEXT) {
       this._state.dialogsPage.newMessageText = action.newMessage;
       this._callSubscriber(this._state);
     }
   },
 };
 
-const ADD_POST = "ADD-POST";
-const UPDATE_POST_TEXT = "UPDATE-POST-TEXT";
-const ADD_MESSAGE = "ADD-MESSAGE";
-const UPDATE_MESSAGE_TEXT = "UPDATE-MESSAGE-TEXT";
+//============== ACTION-CREATORS
 
 export const addPostActionCreator = () => ({ type: ADD_POST });
 
@@ -215,6 +218,7 @@ export const updateMessageTextCreator = (text) => ({
   type: UPDATE_MESSAGE_TEXT,
   newMessage: text,
 });
+//====================================
 
 export default store;
 window.store = store;
